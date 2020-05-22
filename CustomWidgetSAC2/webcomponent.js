@@ -59,7 +59,7 @@
         redraw(){
         	
         // Delete tagContainer which holds the DOM Tree, 
-        	 if (this._tagText != null){
+        
         	        if (this._tagContainer){
         	            this._tagContainer.parentNode.removeChild(this._tagContainer);
         	        }
