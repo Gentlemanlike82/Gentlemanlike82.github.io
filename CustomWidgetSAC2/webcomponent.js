@@ -1,13 +1,12 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-          <h1>Hello World</h1>
       <style>
 
       </style>
     `;
 
-    customElements.define('com-sap-sample-helloworld1', class HelloWorld1 extends HTMLElement {
+    customElements.define('com-sap-sample-helloworld2', class HelloWorld1 extends HTMLElement {
 
 
 		constructor() {
@@ -15,6 +14,9 @@
 			this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
             this._firstConnection = false;
+            this._tagContainer;
+            this._tagType = "h1";
+            this._tagText = "Hello World";
 		}
 
 
@@ -55,6 +57,24 @@
         */
 
         redraw(){
+        	
+        // Delete tagContainer which holds the DOM Tree, 
+        	 if (this._tagText != null){
+        	        if (this._tagContainer){
+        	            this._tagContainer.parentNode.removeChild(this._tagContainer);
+        	        }
+        	        
+        	        var shadow = window.getSelection(this._shadowRoot);
+        	        // Create HTML Tag with tagType
+        	        this._tagContainer = document.createElement(this._tagType);
+        	        // Create HTML Text 
+        	        var theText = document.createTextNode(this._tagText);    
+        	        // add the Text to the HTML tag
+        	        this._tagContainer.appendChild(theText); 
+        	        // add the Tag with the Text to the document
+        	        this._shadowRoot.appendChild(this._tagContainer);
+        	
+        	
         }
     
     
