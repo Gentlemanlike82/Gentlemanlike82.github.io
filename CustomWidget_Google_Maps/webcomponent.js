@@ -8,6 +8,8 @@
           }
 
       </style>
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoc8k0iCPQ6YRu-GiEEVj00I5_RBZzzyw&callback=initMap"
+        async defer></script>
     `;
 /*    <!DOCTYPE html>
     <html>
