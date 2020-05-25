@@ -42,5 +42,5 @@
 			return this._shadowRoot.getElementById("sps_color").value;
 		}
 	}
-
 customElements.define("com-demo-box-sps", BoxSps);
+})();

@@ -88,7 +88,7 @@
 		    var radians;
 		    radians = (angle - 90) * Math.PI / 180.0;
 		    return [Math.round((cx + radius * Math.cos(radians)) * 100) / 100, Math.round((cy + radius * Math.sin(radians)) * 100) / 100];
-		}
+		};
 		
 		svg_circle_arc_path(x, y, radius, start_angle, end_angle) {
 		    var end_xy, start_xy;
@@ -100,7 +100,7 @@
 
 		onCustomWidgetBeforeUpdate(changedProperties) {
 			this._props = { ...this._props, ...changedProperties };
-		}
+		};
 
 		onCustomWidgetAfterUpdate(changedProperties) {
 			if ("value" in changedProperties) {
@@ -116,8 +116,8 @@
 			}
 			
 			this.render(this.$value, this.$info, this.$color);
-		}
+		};
 	}
 	
-	customElements.define("com-demo-gauge", Box);
+customElements.define("com-demo-gauge", Box);
 })();
