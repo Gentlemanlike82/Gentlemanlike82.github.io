@@ -38,14 +38,14 @@
 			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							long: this.long
+							long: this.long,
 							lat: this.lat
 						}
 					}
 			}));
 		}
 		
-		set coordinates(newLong,newLat) {
+/*		set coordinates(newLong, newLat) {
 			this._shadowRoot.getElementById("long").value = newLong;
 			this._shadowRoot.getElementById("lat").value = newLat;
 		}
@@ -55,7 +55,7 @@
 		}
 		get lat() {
 			return this._shadowRoot.getElementById("lat").value;
-		}
+		}*/
 
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
