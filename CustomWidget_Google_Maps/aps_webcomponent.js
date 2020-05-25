@@ -35,11 +35,11 @@
 
 		_submit(e) {
 			e.preventDefault();
-			this.dispatchEvent(new CustomEvent("opropertiesChanged", {
+			this.dispatchEvent(new CustomEvent("propertiesChanged", {
 					detail: {
 						properties: {
-							long: this.long;
-							lat: this.lat;
+							long: this.long
+							lat: this.lat
 						}
 					}
 			}));

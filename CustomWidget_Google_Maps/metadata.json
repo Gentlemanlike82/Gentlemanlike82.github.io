@@ -51,7 +51,8 @@
 					"type": "string",
 					"description": "Latitude"
 				}
-			]
+			],
+			"body": "this.long = newLong; this.lat = newLat; "
 			
 		},
 		"getlat": {
