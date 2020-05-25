@@ -28,12 +28,12 @@
 		"long" : {
 			"type":"number",
 			"description":"Longitude",
-			"default" : "0"
+			"default" : 0
 		},
 		"lat" : {
 			"type" :"number",
 			"description":"Latitude",
-			"default": "0"
+			"default": 0
 		}
 	
 	},
