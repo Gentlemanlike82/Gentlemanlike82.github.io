@@ -12,14 +12,14 @@
         {
 			"kind": "main",
 			"tag": "com-sap-sample-googlemaps1",
-            "url": "https://Gentlemanlike82.github.io/CustomWidgetSAC2/webcomponent.js",
+            "url": "https://Gentlemanlike82.github.io/CustomWidget_Google_Maps/webcomponent.js",
             "integrity": "",
             "ignoreIntegrity" : true
         },
                 {
 			"kind": "builder",
 			"tag": "com-sap-sample-googlemaps1-aps",
-            "url": "https://Gentlemanlike82.github.io/CustomWidgetSAC2/webcomponent.js",
+            "url": "https://Gentlemanlike82.github.io/CustomWidget_Google_Maps/aps_webcomponent.js",
             "integrity": "",
             "ignoreIntegrity" : true
         }
