@@ -88,5 +88,5 @@
 
 	}
 
-customElements.define("com-sap-sample-googlemaps1'-aps", GoogleMapsAps);
+customElements.define("com-sap-sample-googlemaps1-aps", GoogleMapsAps);
 })();
