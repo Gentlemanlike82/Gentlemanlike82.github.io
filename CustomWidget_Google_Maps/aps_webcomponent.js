@@ -56,7 +56,6 @@
 		get lat() {
 			return this._shadowRoot.getElementById("lat").value;
 		}
-		
 
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
